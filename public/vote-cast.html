@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cast Your Vote</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/vote-cast.js" defer></script> <!-- ✅ external JS -->
+</head>
+<body>
+  <div class="container">
+    <h1>🗳️ Cast Your Vote</h1>
+    <form action="/cast-vote" method="POST">
+      <select name="candidateId" id="candidateSelect" required>
+        <option value="" disabled selected>Choose a candidate</option>
+      </select><br><br>
+      <button type="submit">Vote</button>
+    </form>
+  </div>
+</body>
+</html>

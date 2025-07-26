@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Candidates</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('/image/voting-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+    }
+
+    .party-symbols {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .party-symbols img {
+      height: 35px;
+      margin: 5px;
+      background: #fff;
+      border-radius: 4px;
+      padding: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #555;
+    }
+
+    th {
+      background-color: #222;
+    }
+
+    button {
+      padding: 6px 10px;
+      border: none;
+      background-color: #2196f3;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0b7dda;
+    }
+
+    #current-symbol img {
+      height: 30px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🗳️ Manage Candidates (Lok Sabha / Vidhan Sabha)</h1>
+
+    <form id="candidate-form" enctype="multipart/form-data" method = "POST">
+      <input type="hidden" id="candidate-id" name="id">
+      <input type="text" id="name" name="name" placeholder="Candidate Name" required />
+      <input type="text" id="party" name="party" placeholder="Party Name" required />
+      <select id="type" name="type">
+        <option value="Lok Sabha">Lok Sabha</option>
+        <option value="Vidhan Sabha">Vidhan Sabha</option>
+      </select>
+
+      <input type="file" id="symbolFile" name="symbolFile" accept="image/*" />
+      <input type="hidden" id="symbol" name="symbol" />
+      <div id="current-symbol"></div>
+
+      <button type="submit" id="submitBtn">Save Candidate</button>
+    </form>
+
+    <div class="party-symbols">
+      <img src="/symbols/bjp.png" alt="BJP">
+      <img src="/symbols/congress.png" alt="Congress">
+      <img src="/symbols/aap.png" alt="AAP">
+      <img src="/symbols/bsp.png" alt="BSP">
+      <img src="/symbols/sp.png" alt="SP">
+    </div>
+
+    <select id="filter-type">
+      <option value="">All</option>
+      <option value="Lok Sabha">Lok Sabha</option>
+      <option value="Vidhan Sabha">Vidhan Sabha</option>
+    </select>
+
+    <table id="candidates-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Party</th>
+          <th>Type</th>
+          <th>Symbol</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- ✅ External JS file linked -->
+  <script src="/js/manage-candidates.js"></script>
+</body>
+</html>

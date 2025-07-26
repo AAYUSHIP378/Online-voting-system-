@@ -1,0 +1,157 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+label {
+  color: #fff;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1e2a38;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar nav button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: #34495e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar nav button:hover {
+  background: #3c5a77;
+}
+
+main {
+  margin-left: 240px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+.auth-container, .vote-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.auth-container h2, .vote-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container form input,
+.auth-container form select,
+.vote-container form select,
+.auth-container form button,
+.vote-container form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: #020911;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0c0d0e;
+}
+
+p {
+  text-align: center;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  margin: 0; padding: 0;
+}
+.container { display: flex; min-height: 100vh; }
+.sidebar {
+  width: 240px; background: #ffae00; color: white;
+  padding: 20px; box-sizing: border-box;
+}
+.sidebar h2 { margin-top:0; }
+.sidebar nav { margin-top:20px; }
+.sidebar button {
+  width:100%; margin:8px 0; padding:10px;
+  background:#ffd000; border:none; border-radius:6px;
+  cursor:pointer; color:white;
+}
+.sidebar button:hover { background:#b37400; }
+.main-content {
+  flex:1; padding:40px; box-sizing:border-box;
+}
+.auth-container, .vote-container {
+  max-width:400px; margin:auto; background:white;
+  padding:30px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.auth-container h2, .vote-container h2 { text-align:center; }
+.auth-container form input,
+.auth-container form select,
+.vote-container form select,
+.auth-container form button,
+.vote-container form button {
+  width:100%; padding:10px; margin:10px 0;
+  box-sizing:border-box; border-radius:5px; border:1px solid #ccc;
+}
+button[type=submit], .auth-container form button {
+  background:#007BFF; color:white; font-size:16px;
+}
+button[type=submit]:hover, .auth-container form button:hover {
+  background:#0056b3;
+}
+.auth-container p, .vote-container p { text-align:center; }

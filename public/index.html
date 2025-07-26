@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  
+
+  
+   <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/image/voting-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px 30px;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  }
+
+  .btn-group a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s;
+  }
+
+  .btn-group a:hover {
+    background-color: #a93226;
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .btn-group a {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+</style>
+
+  
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Online Voting System</h1>
+    <div class="btn-group">
+      <link rel="stylesheet" href="/css/style.css">
+
+      <a href="/voter-login.html">Voter Login</a>
+      <a href="/voter-register.html">Register</a>
+      <a href="/admin-dashboard.html">Admin Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>
+
